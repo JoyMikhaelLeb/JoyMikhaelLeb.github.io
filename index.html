@@ -3,28 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joy Mikhael, Python and data</title>
-<meta name="description" content="Joy Mikhael: Python developer with six years of work in data scraping, pipelines and machine learning. Projects, experience and contact.">
+<title>Joy Mikhael, Data and AI Specialist</title>
+<meta name="description" content="Joy Mikhael: Data and AI Specialist with 6+ years of Python across data collection, cleaning, analysis, machine learning and NLP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
     --paper: #F2F4F1;
-    --paper-2: #E8ECE8;
+    --paper-2: #E7EBE7;
     --ink: #16202A;
     --ink-2: #4A5562;
     --rule: #CDD3D0;
     --cedar: #1E5B47;
     --cedar-ink: #FFFFFF;
     --gold: #B97A12;
-    --heat-lo: 228, 236, 231;
-    --heat-hi: 30, 91, 71;
 
-    --display: 'Bricolage Grotesque', system-ui, sans-serif;
-    --body: 'Newsreader', Georgia, serif;
-
-    --measure: 64ch;
+    --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --measure: 66ch;
     --gutter: clamp(20px, 5vw, 64px);
   }
 
@@ -38,8 +34,6 @@
       --cedar: #74C4A2;
       --cedar-ink: #0E1412;
       --gold: #E3AC4A;
-      --heat-lo: 27, 36, 33;
-      --heat-hi: 76, 170, 132;
     }
   }
 
@@ -50,15 +44,15 @@
   body {
     background: var(--paper);
     color: var(--ink);
-    font-family: var(--body);
-    font-size: 19px;
-    line-height: 1.6;
+    font-family: var(--font);
+    font-size: 17px;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
 
   a { color: var(--cedar); text-underline-offset: 3px; text-decoration-thickness: 1px; }
   a:hover { text-decoration-thickness: 2px; }
-  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 3px; }
 
   .wrap { max-width: 1160px; margin: 0 auto; padding: 0 var(--gutter); }
 
@@ -68,42 +62,45 @@
     justify-content: space-between;
     align-items: baseline;
     padding: 28px 0;
-    font-family: var(--display);
-    font-size: 16px;
+    font-size: 15px;
   }
-  header.site .home { color: var(--ink); text-decoration: none; font-weight: 700; font-stretch: 80%; font-size: 20px; }
+  header.site .home { color: var(--ink); text-decoration: none; font-weight: 800; font-size: 18px; letter-spacing: -0.01em; }
   header.site nav { display: flex; gap: 28px; }
-  header.site nav a { color: var(--ink-2); text-decoration: none; }
+  header.site nav a { color: var(--ink-2); text-decoration: none; font-weight: 500; }
   header.site nav a:hover { color: var(--ink); }
 
   /* Hero */
   .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
-    gap: clamp(32px, 6vw, 88px);
-    align-items: center;
-    padding: clamp(40px, 8vh, 96px) 0 clamp(64px, 10vh, 120px);
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: clamp(32px, 6vw, 96px);
+    align-items: end;
+    padding: clamp(48px, 10vh, 120px) 0 clamp(64px, 10vh, 112px);
   }
 
   h1 {
-    font-family: var(--display);
     font-weight: 800;
-    font-stretch: 75%;
-    font-size: clamp(64px, 11vw, 148px);
-    line-height: 0.86;
-    letter-spacing: -0.035em;
+    font-size: clamp(56px, 9.5vw, 128px);
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+  }
+
+  .role {
+    margin-top: 20px;
+    font-size: clamp(20px, 2vw, 24px);
+    font-weight: 600;
+    color: var(--cedar);
+    letter-spacing: -0.01em;
   }
 
   .lede {
-    margin-top: 32px;
-    max-width: 30ch;
-    font-size: clamp(21px, 2.1vw, 25px);
-    line-height: 1.45;
+    margin-top: 18px;
+    max-width: 50ch;
+    font-size: clamp(17px, 1.6vw, 19px);
+    color: var(--ink-2);
   }
 
-  .lede-2 { margin-top: 16px; max-width: 44ch; color: var(--ink-2); }
-
-  .actions { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px; font-family: var(--display); font-size: 16px; }
+  .actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; font-size: 15px; }
   .btn {
     display: inline-block;
     padding: 11px 20px;
@@ -117,126 +114,77 @@
   .btn-line { color: var(--cedar); }
   .btn-line:hover { background: var(--paper-2); }
 
-  /* Scoreline figure */
-  figure.grid-fig {
+  .facts {
     background: var(--paper-2);
     border-radius: 18px;
-    padding: clamp(18px, 2.5vw, 28px);
+    padding: 24px 26px;
+    font-size: 15px;
   }
-  .fig-head { font-family: var(--display); font-weight: 650; font-size: 18px; line-height: 1.3; }
-  .fig-sub { margin-top: 4px; font-size: 15px; color: var(--ink-2); line-height: 1.45; }
-
-  .heat {
-    margin-top: 18px;
-    display: grid;
-    grid-template-columns: 22px repeat(6, 1fr);
-    gap: 3px;
-    font-family: var(--display);
-    font-variant-numeric: tabular-nums;
-    font-size: 13px;
-  }
-  .heat .ax { display: grid; place-items: center; color: var(--ink-2); font-size: 12px; min-height: 18px; }
-  .heat .cell {
-    aspect-ratio: 1.25;
-    display: grid;
-    place-items: center;
-    border-radius: 5px;
-    transition: background-color 0.25s ease, color 0.25s ease;
-  }
-  .heat .cell.top { box-shadow: inset 0 0 0 2px var(--gold); }
-  @media (prefers-reduced-motion: reduce) { .heat .cell { transition: none; } }
-
-  .axis-names {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6px;
-    font-family: var(--display);
-    font-size: 12.5px;
-    color: var(--ink-2);
-  }
-
-  .outcome {
-    margin-top: 16px;
-    display: flex;
-    height: 30px;
-    border-radius: 6px;
-    overflow: hidden;
-    font-family: var(--display);
-    font-size: 13px;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-  }
-  .outcome span { display: grid; place-items: center; white-space: nowrap; overflow: hidden; transition: flex-basis 0.25s ease; }
-  .outcome .w { background: var(--cedar); color: var(--cedar-ink); }
-  .outcome .d { background: var(--rule); color: var(--ink); }
-  .outcome .l { background: var(--ink-2); color: var(--paper); }
-  @media (prefers-reduced-motion: reduce) { .outcome span { transition: none; } }
-
-  .sliders { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-family: var(--display); font-size: 14px; }
-  .sliders label { display: block; color: var(--ink-2); }
-  .sliders output { color: var(--ink); font-weight: 650; font-variant-numeric: tabular-nums; }
-  .sliders input { width: 100%; margin-top: 6px; accent-color: var(--cedar); }
-
-  .fig-note { margin-top: 14px; font-size: 14.5px; color: var(--ink-2); line-height: 1.45; }
+  .facts dl { display: grid; gap: 14px; }
+  .facts dt { font-weight: 700; font-size: 14px; }
+  .facts dd { color: var(--ink-2); }
 
   /* Sections */
   section.block { border-top: 1.5px solid var(--ink); padding: 40px 0 88px; }
   .block-grid { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 40px; }
   h2 {
-    font-family: var(--display);
-    font-weight: 750;
-    font-stretch: 80%;
-    font-size: clamp(30px, 3.4vw, 40px);
-    line-height: 1;
-    letter-spacing: -0.02em;
+    font-weight: 800;
+    font-size: clamp(28px, 3vw, 36px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
   }
+  h3 { font-weight: 700; letter-spacing: -0.015em; }
 
   /* About */
   .about p { max-width: var(--measure); }
-  .about p + p { margin-top: 18px; }
   .skills {
-    margin-top: 40px;
+    margin-top: 36px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 40px;
   }
-  .skills h3 { font-family: var(--display); font-size: 16px; font-weight: 650; margin-bottom: 8px; }
-  .skills ul { list-style: none; font-size: 16px; color: var(--ink-2); line-height: 1.7; }
+  .skills h3 { font-size: 15px; margin-bottom: 4px; }
+  .skills p { font-size: 15px; color: var(--ink-2); line-height: 1.6; }
+
+  /* Experience */
+  .job { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; padding: 0 0 32px; }
+  .job + .job { padding-top: 32px; border-top: 1px solid var(--rule); }
+  .job .when { font-size: 15px; color: var(--ink-2); font-variant-numeric: tabular-nums; padding-top: 3px; }
+  .job h3 { font-size: 21px; line-height: 1.25; }
+  .job .where { font-size: 15px; font-weight: 500; color: var(--cedar); margin-top: 2px; }
+  .job ul { margin-top: 12px; padding-left: 1.1em; max-width: var(--measure); }
+  .job li { margin-top: 6px; }
+  .job li::marker { color: var(--cedar); }
 
   /* Projects */
   .project { padding: 28px 0 32px; border-bottom: 1px solid var(--rule); }
   .project:first-child { padding-top: 0; }
   .project:last-child { border-bottom: 0; }
-  .project h3 {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: -0.01em;
-  }
-  .project.lead h3 { font-size: clamp(30px, 3.2vw, 38px); font-stretch: 85%; }
-  .project .kind { margin-top: 4px; font-family: var(--display); font-size: 15px; color: var(--cedar); }
+  .project h3 { font-size: 24px; line-height: 1.2; }
+  .project .kind { margin-top: 4px; font-size: 14.5px; font-weight: 500; color: var(--cedar); }
   .project p { margin-top: 12px; max-width: var(--measure); }
-  .project .stack { margin-top: 12px; font-family: var(--display); font-size: 14.5px; color: var(--ink-2); }
-  .project .code { display: inline-block; margin-top: 14px; font-family: var(--display); font-size: 16px; font-weight: 600; }
-  .project .private { margin-top: 14px; font-family: var(--display); font-size: 15px; color: var(--ink-2); }
+  .project .stack { margin-top: 12px; font-size: 14px; color: var(--ink-2); }
+  .project .code { display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 600; }
+  .project .private { margin-top: 14px; font-size: 14.5px; color: var(--ink-2); }
 
-  /* Experience */
-  .job { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 24px; padding: 0 0 28px; }
-  .job + .job { padding-top: 28px; border-top: 1px solid var(--rule); }
-  .job .when { font-family: var(--display); font-size: 16px; color: var(--ink-2); font-variant-numeric: tabular-nums; padding-top: 4px; }
-  .job h3 { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.2; }
-  .job .where { font-family: var(--display); font-size: 16px; color: var(--cedar); margin-top: 2px; }
-  .job p { margin-top: 10px; max-width: var(--measure); }
+  /* Education */
+  .edu { display: grid; gap: 24px; }
+  .edu h3 { font-size: 19px; line-height: 1.3; }
+  .edu p { color: var(--ink-2); font-size: 15.5px; margin-top: 2px; }
+  .langs { margin-top: 32px; }
+  .langs h3 { font-size: 19px; }
+  .langs p { color: var(--ink-2); margin-top: 2px; }
 
   /* Contact */
-  .contact p { max-width: 40ch; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.35; }
-  .contact .actions { margin-top: 28px; }
+  .contact .intro { max-width: 40ch; font-size: clamp(20px, 2.2vw, 26px); font-weight: 600; line-height: 1.35; letter-spacing: -0.015em; }
+  .contact-list { margin-top: 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 40px; max-width: 720px; }
+  .contact-list dt { font-size: 14px; font-weight: 700; }
+  .contact-list dd { font-size: 18px; margin-top: 2px; overflow-wrap: anywhere; }
+  .contact-list a { font-weight: 500; }
 
   footer.site {
     border-top: 1px solid var(--rule);
     padding: 24px 0 40px;
-    font-family: var(--display);
     font-size: 14px;
     color: var(--ink-2);
     display: flex;
@@ -247,17 +195,15 @@
 
   /* Responsive */
   @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; }
+    .hero { grid-template-columns: 1fr; align-items: start; }
     .block-grid { grid-template-columns: 1fr; gap: 28px; }
-    .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  @media (max-width: 560px) {
-    body { font-size: 18px; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
     header.site nav { gap: 16px; }
     header.site nav a.opt { display: none; }
     .job { grid-template-columns: 1fr; gap: 4px; }
-    .sliders { grid-template-columns: 1fr; }
-    .heat { font-size: 11px; gap: 2px; }
+    .skills, .contact-list { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -268,8 +214,8 @@
     <a href="#top" class="home">Joy Mikhael</a>
     <nav aria-label="Sections">
       <a href="#about" class="opt">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience" class="opt">Experience</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects" class="opt">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -278,63 +224,120 @@
     <section class="hero" aria-labelledby="name">
       <div>
         <h1 id="name">Joy<br>Mikhael</h1>
-        <p class="lede">Six years of scraping, cleaning, storing and modelling data in Python.</p>
-        <p class="lede-2">I build the pipelines that collect data and the models that learn from it. Based in Lebanon, working remotely and open to new roles.</p>
+        <p class="role">Data and AI Specialist</p>
+        <p class="lede">6+ years of Python across data collection, cleaning, analysis, machine learning and NLP. I build predictive models, data pipelines and AI-powered tools.</p>
         <div class="actions">
-          <a href="#projects" class="btn btn-solid">See my projects</a>
+          <a href="#contact" class="btn btn-solid">Get in touch</a>
           <a href="https://github.com/JoyMikhaelLeb" class="btn btn-line">GitHub</a>
           <a href="https://linkedin.com/in/joymikhael17" class="btn btn-line">LinkedIn</a>
         </div>
       </div>
 
-      <figure class="grid-fig" aria-labelledby="fig-title">
-        <div class="fig-head" id="fig-title">Every scoreline, as a probability</div>
-        <p class="fig-sub">How my World Cup predictor turns expected goals into a full grid of scores. Move the sliders.</p>
-
-        <div class="heat" id="heat" role="img" aria-label="Grid of scoreline probabilities"></div>
-        <div class="axis-names"><span>Rows: Team A goals</span><span>Columns: Team B goals</span></div>
-
-        <div class="outcome" id="outcome" aria-live="polite">
-          <span class="w"></span><span class="d"></span><span class="l"></span>
-        </div>
-
-        <div class="sliders">
-          <div>
-            <label for="la">Team A expected goals <output id="la-out">1.6</output></label>
-            <input type="range" id="la" min="0.2" max="3.5" step="0.1" value="1.6">
-          </div>
-          <div>
-            <label for="lb">Team B expected goals <output id="lb-out">1.1</output></label>
-            <input type="range" id="lb" min="0.2" max="3.5" step="0.1" value="1.1">
-          </div>
-        </div>
-        <p class="fig-note">Each side's goals follow a Poisson distribution. The gold square is the single most likely score; the bar sums the grid into win, draw and loss.</p>
-      </figure>
+      <aside class="facts" aria-label="At a glance">
+        <dl>
+          <div><dt>Now</dt><dd>Python data engineer at RanDee and freelance data science consultant</dd></div>
+          <div><dt>Focus</dt><dd>Machine learning, NLP, data pipelines and LLM tools</dd></div>
+          <div><dt>Based in</dt><dd>Bane, Lebanon. Working remotely</dd></div>
+          <div><dt>Education</dt><dd>MSc Cyber Security and Cyber Defence, BSc Computer Science</dd></div>
+        </dl>
+      </aside>
     </section>
 
     <section class="block" id="about">
       <div class="block-grid">
         <h2>About</h2>
         <div class="about">
-          <p>I'm a Python developer who has spent six years working with data at every stage: scraping it at scale, cleaning it, storing it and building models on top of it. Since 2020 I've worked remotely at RanDee, a startup where I built and owned large-scale scraping systems, ETL automation and cloud data pipelines from the ground up.</p>
-          <p>Lately my work leans toward machine learning and applied AI: predictive models, LLM pipelines with structured output and tool-using agents. I hold an MSc in Cybersecurity and a BSc in Computer Science from USEK, Lebanon.</p>
+          <p>I'm a Data and AI Specialist with 6+ years of Python experience across data collection, cleaning, analysis, machine learning and NLP. I build predictive models, data pipelines and AI-powered tools with LLMs and agentic coding tools such as Claude Code. I work with clients as a freelancer on data science and automation projects and keep exploring new AI tools and techniques to bring them into real work.</p>
 
           <div class="skills">
             <div>
-              <h3>Core</h3>
-              <ul><li>Python</li><li>FastAPI</li><li>Async/await</li><li>PostgreSQL</li><li>MongoDB</li><li>Firestore</li></ul>
+              <h3>Programming</h3>
+              <p>Python, SQL</p>
             </div>
             <div>
-              <h3>Data and scraping</h3>
-              <ul><li>Selenium</li><li>Playwright</li><li>nodriver</li><li>BeautifulSoup</li><li>Scrapy</li><li>pandas</li></ul>
+              <h3>Data science and analytics</h3>
+              <p>pandas, NumPy, scikit-learn, XGBoost, SciPy, EDA, data cleaning and validation, feature engineering, regression, classification, clustering, model evaluation</p>
             </div>
             <div>
-              <h3>ML and AI</h3>
-              <ul><li>scikit-learn</li><li>XGBoost</li><li>Anthropic API</li><li>ChromaDB</li><li>sentence-transformers</li><li>Ollama</li></ul>
+              <h3>NLP and AI</h3>
+              <p>Text preprocessing, tokenization, feature extraction, text classification, sentence-transformers embeddings, LLM structured extraction, Anthropic SDK (tool use, prompt caching), Pydantic, prompt engineering, LLM evaluation</p>
             </div>
             <div>
-              <h3>Cloud and tools</h3>
-              <ul><li>GCP</li><li>Supabase</li><li>Docker</li><li>Streamlit</li></ul>
+              <h3>Data engineering</h3>
+              <p>ETL pipelines, web scraping (Selenium, Playwright, BeautifulSoup, Scrapy, nodriver), asyncio, aiohttp, FastAPI, REST APIs, Docker, Git</p>
+            </div>
+            <div>
+              <h3>Databases and cloud</h3>
+              <p>PostgreSQL, MongoDB, Firestore, Supabase, SQLite, Google Cloud Platform (Cloud Run, Cloud Storage, Firebase)</p>
+            </div>
+            <div>
+              <h3>Visualization and reporting</h3>
+              <p>Matplotlib, Streamlit dashboards, Excel, Google Sheets, data reports, API and process documentation, user guides</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="experience">
+      <div class="block-grid">
+        <h2>Experience</h2>
+        <div>
+          <div class="job">
+            <div class="when">Jun 2020–now</div>
+            <div>
+              <h3>Python Backend Data Engineer and Report Writer</h3>
+              <div class="where">RanDee, remote</div>
+              <ul>
+                <li>Engineered ETL pipelines processing about 1 million records per month, turning raw web data into analytics-ready datasets across PostgreSQL, MongoDB, Firestore and Supabase.</li>
+                <li>Wrote Python scripts with pandas and NumPy for automated reporting, trend analysis and feature preparation for analytics and modeling.</li>
+                <li>Built data acquisition infrastructure with Selenium, nodriver, Playwright, BeautifulSoup and Scrapy, with structured logging for production reliability.</li>
+                <li>Developed FastAPI microservices on Google Cloud Run to automate data ingestion, transformation and synchronization through REST APIs.</li>
+                <li>Implemented error handling with Slack and email alerting and worked with cross-functional teams to define data requirements and resolve inconsistencies.</li>
+                <li>Since 2023, wrote reports, codebase and API documentation and client-facing setup guides for each delivered product.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="when">Jan 2023–now</div>
+            <div>
+              <h3>Python Automation and Data Consultant</h3>
+              <div class="where">Freelance, remote</div>
+              <ul>
+                <li>Delivered data science, NLP and automation projects for clients across research, business and academic domains, on private codebases under client confidentiality.</li>
+                <li>Built NLP solutions on unstructured text: cleaning, normalization, tokenization, feature extraction, text classification and embeddings feeding statistical and ML models.</li>
+                <li>Designed and evaluated classification and regression models with scikit-learn and XGBoost, delivering prototypes with documented metrics.</li>
+                <li>Automated data cleaning, validation and reporting workflows with Python, pandas and Excel.</li>
+                <li>Refactored and migrated client codebases to clean, maintainable Python and delivered hands-on scikit-learn training.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="when">2020–2022</div>
+            <div>
+              <h3>Data Entry and Analysis Assistant (part-time)</h3>
+              <div class="where">BaneAct Association with Bane Municipality, Bane</div>
+              <ul>
+                <li>Collected, entered and cleaned data from Bane citizens for community projects connecting Lebanese expatriates with the town.</li>
+                <li>Organized and validated records into structured datasets and analyzed them to support project planning and follow-up.</li>
+                <li>Prepared summaries and reports for the association and the municipality across multiple projects.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="when">Feb 2019–May 2020</div>
+            <div>
+              <h3>Junior Software Developer</h3>
+              <div class="where">Menalytix</div>
+              <ul>
+                <li>Built automated data collection pipelines via web scraping, structuring raw data into clean queryable formats for business analytics.</li>
+                <li>Integrated REST APIs to automate data ingestion and synchronization, reducing manual effort by about 70%.</li>
+                <li>Designed MongoDB schemas to store and manage large volumes of structured data.</li>
+                <li>Contributed to backend data workflows supporting reporting and business intelligence features.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -345,10 +348,10 @@
       <div class="block-grid">
         <h2>Projects</h2>
         <div>
-          <article class="project lead">
+          <article class="project">
             <h3>World Cup 2026 Predictor</h3>
             <div class="kind">Machine learning, full stack</div>
-            <p>Predicts World Cup match outcomes and full scoreline distributions. Tracks team strength with a custom ELO engine over 49,000+ international matches since 1872, adds rolling form features, then trains a logistic regression for win, draw and loss and two Poisson regressions for goals. Corrects for neutral venues by averaging both team orders and resolves knockout draws through extra time and penalties. The grid at the top of this page uses the same scoreline method.</p>
+            <p>Predicts World Cup match outcomes and full scoreline distributions. Tracks team strength with a custom ELO engine over 49,000+ international matches since 1872, adds rolling form features, then trains a logistic regression for win, draw and loss and two Poisson regressions for goals. Corrects for neutral venues and resolves knockout draws through extra time and penalties.</p>
             <div class="stack">Python, pandas, scikit-learn, SciPy, FastAPI, Next.js, TypeScript</div>
             <a class="code" href="https://github.com/JoyMikhaelLeb/world-cup-predictor">View code on GitHub</a>
           </article>
@@ -356,7 +359,7 @@
           <article class="project">
             <h3>Resume-to-JD Matching Agent</h3>
             <div class="kind">LLM pipeline</div>
-            <p>Scores resume PDFs against a job description with the Claude API. Each resume is parsed with pdfplumber, turned into a structured profile and scored on four dimensions using forced tool use validated by Pydantic. Includes prompt caching on the shared job description, an optional self-critique pass and an eval harness for testing probabilistic LLM output. Outputs ranked JSON plus a Markdown report.</p>
+            <p>Scores resume PDFs against a job description with the Claude API. Each resume is parsed with pdfplumber, turned into a structured profile and scored on four dimensions using forced tool use validated by Pydantic. Includes prompt caching on the shared job description, an optional self-critique pass and an eval harness for testing probabilistic LLM output.</p>
             <div class="stack">Python, Anthropic API, Pydantic, pdfplumber, evals</div>
             <a class="code" href="https://github.com/JoyMikhaelLeb/resume-screening">View code on GitHub</a>
           </article>
@@ -364,7 +367,7 @@
           <article class="project">
             <h3>Tasklet Support Agent</h3>
             <div class="kind">AI agent</div>
-            <p>A multi-turn support agent for a fictional B2B SaaS, built on native Claude tool use with no agent frameworks. The model picks from predefined query functions instead of writing SQL, and per-user data scoping is enforced in the service layer with tested defenses against injected IDs. Conversation state persists to SQLite. Ships with a CLI, a Streamlit UI and a React dashboard over FastAPI.</p>
+            <p>A multi-turn support agent for a fictional B2B SaaS, built on native Claude tool use with no agent frameworks. The model picks from predefined query functions instead of writing SQL, and per-user data scoping is enforced in the service layer with tested defenses against injected IDs. Ships with a CLI, a Streamlit UI and a React dashboard over FastAPI.</p>
             <div class="stack">Python, Anthropic API, FastAPI, SQLite, Streamlit, React, pytest</div>
             <a class="code" href="https://github.com/JoyMikhaelLeb/tasklet-project">View code on GitHub</a>
           </article>
@@ -372,7 +375,7 @@
           <article class="project">
             <h3>General Data Collector</h3>
             <div class="kind">Data engineering</div>
-            <p>A suite of 23 async web crawlers collecting startup and company data from directories, investment platforms, government registries such as Companies House, Infogreffe and SEC EDGAR, and MENA sources such as Magnitt, Wamda and ArabNet. Every crawler is containerized with its own tests, rate limiting and JSON or CSV export, and the whole fleet runs through Docker Compose and Make.</p>
+            <p>A suite of 23 async web crawlers collecting startup and company data from directories, investment platforms, government registries such as Companies House, Infogreffe and SEC EDGAR, and MENA sources such as Magnitt, Wamda and ArabNet. Every crawler is containerized with its own tests, rate limiting and JSON or CSV export.</p>
             <div class="stack">Python, asyncio, aiohttp, Docker, uv, pytest</div>
             <a class="code" href="https://github.com/JoyMikhaelLeb/general-data-collector">View code on GitHub</a>
           </article>
@@ -388,33 +391,23 @@
       </div>
     </section>
 
-    <section class="block" id="experience">
+    <section class="block" id="education">
       <div class="block-grid">
-        <h2>Experience</h2>
+        <h2>Education</h2>
         <div>
-          <div class="job">
-            <div class="when">2020–now</div>
+          <div class="edu">
             <div>
-              <h3>Python Backend Data Engineer</h3>
-              <div class="where">RanDee, remote</div>
-              <p>Built and maintained large-scale web scraping pipelines, ETL processes and data reporting systems. Owned the full data infrastructure: async scrapers, Firestore and GCS pipelines, cost optimization and automated reporting. Reduced Firestore read costs by about 96% through architecture changes.</p>
+              <h3>MSc Cyber Security and Cyber Defence</h3>
+              <p>USEK (Holy Spirit University of Kaslik) and Université Bretagne-Sud, 2019–2021</p>
+            </div>
+            <div>
+              <h3>BSc Computer Science</h3>
+              <p>USEK (Holy Spirit University of Kaslik), 2015–2018</p>
             </div>
           </div>
-          <div class="job">
-            <div class="when">2019–2020</div>
-            <div>
-              <h3>Junior Software Developer</h3>
-              <div class="where">Menalytix</div>
-              <p>Python backend development. Built data processing tools and automated workflows.</p>
-            </div>
-          </div>
-          <div class="job">
-            <div class="when">Ongoing</div>
-            <div>
-              <h3>Data and NLP Consultant</h3>
-              <div class="where">Freelance</div>
-              <p>NLP and regression analysis for a PhD candidate, a Java-to-Python codebase conversion and talks on security and data protection.</p>
-            </div>
+          <div class="langs">
+            <h3>Languages</h3>
+            <p>Arabic (native), English (professional), French (intermediate)</p>
           </div>
         </div>
       </div>
@@ -424,99 +417,23 @@
       <div class="block-grid">
         <h2>Contact</h2>
         <div class="contact">
-          <p>Open to remote roles in data science, machine learning and Python data engineering.</p>
-          <div class="actions">
-            <a href="https://linkedin.com/in/joymikhael17" class="btn btn-solid">Message me on LinkedIn</a>
-            <a href="https://github.com/JoyMikhaelLeb" class="btn btn-line">GitHub</a>
-          </div>
+          <p class="intro">Open to roles in data science, machine learning and Python data engineering.</p>
+          <dl class="contact-list">
+            <div><dt>Email</dt><dd><a href="mailto:joymikhael1701@gmail.com">joymikhael1701@gmail.com</a></dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+96170213365">+961 70 213 365</a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/joymikhael17">linkedin.com/in/joymikhael17</a></dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/JoyMikhaelLeb">github.com/JoyMikhaelLeb</a></dd></div>
+          </dl>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site">
-    <span>Joy Mikhael</span>
-    <span>Lebanon, working remotely</span>
+    <span>Joy Mikhael, Data and AI Specialist</span>
+    <span>Bane, Lebanon</span>
   </footer>
 </div>
 
-<script>
-  (function () {
-    const N = 6; // goals 0 to 5 per side
-    const heat = document.getElementById('heat');
-    const la = document.getElementById('la'), lb = document.getElementById('lb');
-    const laOut = document.getElementById('la-out'), lbOut = document.getElementById('lb-out');
-    const [w, d, l] = document.querySelectorAll('#outcome span');
-    const darkQ = matchMedia('(prefers-color-scheme: dark)');
-
-    function rgb(name) {
-      return getComputedStyle(document.documentElement).getPropertyValue(name).trim().split(',').map(Number);
-    }
-
-    function pois(k, lam) {
-      let f = 1; for (let i = 2; i <= k; i++) f *= i;
-      return Math.exp(-lam) * Math.pow(lam, k) / f;
-    }
-
-    heat.appendChild(document.createElement('span'));
-    for (let j = 0; j < N; j++) {
-      const a = document.createElement('span'); a.className = 'ax'; a.textContent = j; heat.appendChild(a);
-    }
-    const cells = [];
-    for (let i = 0; i < N; i++) {
-      const a = document.createElement('span'); a.className = 'ax'; a.textContent = i; heat.appendChild(a);
-      cells[i] = [];
-      for (let j = 0; j < N; j++) {
-        const c = document.createElement('span'); c.className = 'cell'; heat.appendChild(c); cells[i][j] = c;
-      }
-    }
-
-    function render() {
-      const A = +la.value, B = +lb.value;
-      laOut.textContent = A.toFixed(1); lbOut.textContent = B.toFixed(1);
-      const lo = rgb('--heat-lo'), hi = rgb('--heat-hi');
-      const dark = darkQ.matches;
-
-      // outcome totals over a wider range so the bar stays accurate
-      let pw = 0, pd = 0, pl = 0;
-      for (let i = 0; i <= 12; i++) for (let j = 0; j <= 12; j++) {
-        const p = pois(i, A) * pois(j, B);
-        if (i > j) pw += p; else if (i === j) pd += p; else pl += p;
-      }
-
-      let max = 0, top = [0, 0];
-      const grid = [];
-      for (let i = 0; i < N; i++) { grid[i] = []; for (let j = 0; j < N; j++) {
-        const p = pois(i, A) * pois(j, B); grid[i][j] = p;
-        if (p > max) { max = p; top = [i, j]; }
-      }}
-
-      for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
-        const p = grid[i][j], t = Math.sqrt(p / max);
-        const c = lo.map((v, k) => Math.round(v + (hi[k] - v) * t));
-        const cell = cells[i][j];
-        cell.style.backgroundColor = `rgb(${c.join(',')})`;
-        const strong = dark ? t > 0.75 : t > 0.5;
-        cell.style.color = dark ? (strong ? '#0E1412' : '#C9D3CE') : (strong ? '#FFFFFF' : '#2E3A44');
-        const pct = p * 100;
-        cell.textContent = pct >= 0.95 ? Math.round(pct) + '%' : (pct >= 0.1 ? '<1%' : '');
-        cell.classList.toggle('top', i === top[0] && j === top[1]);
-        cell.title = `${i}–${j}: ${pct.toFixed(1)}%`;
-      }
-
-      const fmt = v => Math.round(v * 100);
-      w.style.flexBasis = (pw * 100) + '%'; d.style.flexBasis = (pd * 100) + '%'; l.style.flexBasis = (pl * 100) + '%';
-      w.textContent = fmt(pw) >= 12 ? `A wins ${fmt(pw)}%` : `${fmt(pw)}%`;
-      d.textContent = fmt(pd) >= 12 ? `Draw ${fmt(pd)}%` : `${fmt(pd)}%`;
-      l.textContent = fmt(pl) >= 12 ? `B wins ${fmt(pl)}%` : `${fmt(pl)}%`;
-      heat.setAttribute('aria-label', `Most likely score ${top[0]} to ${top[1]} at ${(max * 100).toFixed(0)}%. Team A wins ${fmt(pw)}%, draw ${fmt(pd)}%, Team B wins ${fmt(pl)}%.`);
-    }
-
-    la.addEventListener('input', render);
-    lb.addEventListener('input', render);
-    darkQ.addEventListener('change', render);
-    render();
-  })();
-</script>
 </body>
 </html>
