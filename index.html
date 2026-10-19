@@ -695,21 +695,22 @@
 
       <div class="project-card highlight fade-in">
         <div>
-          <div class="project-tag">AI Engineering · In Progress</div>
-          <div class="project-name">MoodMeal — Conversational Recipe Chatbot</div>
+          <div class="project-tag">Machine Learning · Full Stack</div>
+          <div class="project-name">World Cup 2026 Predictor</div>
           <p class="project-desc">
-            A conversational AI chatbot that recommends Lebanese and Levantine dishes based on free-text mood input. Built with a Kedro-managed offline pipeline, FAISS vector search, Google Gemini API for intent parsing and re-ranking, and a FastAPI + Streamlit interface. Hand-curated recipe dataset.
+            Predicts World Cup match outcomes and full scoreline distributions. Tracks team strength with a custom ELO engine over 49,000+ international matches since 1872, adds rolling form features, then trains a logistic regression for win/draw/loss and two Poisson regressions for goals. Corrects for neutral venues by averaging both team orders and resolves knockout draws via extra time and penalties. Served through a FastAPI backend and a Next.js frontend.
           </p>
           <div class="project-stack">
             <span class="tag">Python</span>
-            <span class="tag">Kedro</span>
-            <span class="tag">FAISS</span>
-            <span class="tag">Gemini API</span>
+            <span class="tag">pandas</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">SciPy</span>
             <span class="tag">FastAPI</span>
-            <span class="tag">Streamlit</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
           </div>
         </div>
-        <a href="https://github.com/JoyMikhaelLeb" target="_blank" class="project-link">
+        <a href="https://github.com/JoyMikhaelLeb/world-cup-predictor" target="_blank" rel="noopener" class="project-link">
           GitHub
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
@@ -717,20 +718,21 @@
 
       <div class="project-card fade-in">
         <div>
-          <div class="project-tag">AI Engineering · RAG</div>
-          <div class="project-name">Local RAG Recipe Assistant</div>
+          <div class="project-tag">AI Engineering · LLM Pipeline</div>
+          <div class="project-name">Resume-to-JD Matching Agent</div>
           <p class="project-desc">
-            A fully local retrieval-augmented generation pipeline for recipe Q&A. Implements semantic search over a recipe corpus using sentence-transformers embeddings, ChromaDB as the vector store, and llama3.2 via Ollama as the local LLM. Extended with multi-turn chat history.
+            Scores resume PDFs against a job description with the Claude API. Each resume is parsed with pdfplumber, turned into a structured profile and scored on four dimensions using forced tool use validated by Pydantic. Includes prompt caching on the shared JD, an optional self-critique pass and an eval harness for testing probabilistic LLM output. Outputs ranked JSON plus a Markdown report.
           </p>
           <div class="project-stack">
             <span class="tag">Python</span>
-            <span class="tag">ChromaDB</span>
-            <span class="tag">sentence-transformers</span>
-            <span class="tag">Ollama</span>
-            <span class="tag">llama3.2</span>
+            <span class="tag">Anthropic API</span>
+            <span class="tag">Tool Use</span>
+            <span class="tag">Pydantic</span>
+            <span class="tag">pdfplumber</span>
+            <span class="tag">Evals</span>
           </div>
         </div>
-        <a href="https://github.com/JoyMikhaelLeb" target="_blank" class="project-link">
+        <a href="https://github.com/JoyMikhaelLeb/resume-screening" target="_blank" rel="noopener" class="project-link">
           GitHub
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
@@ -738,10 +740,55 @@
 
       <div class="project-card fade-in">
         <div>
-          <div class="project-tag">Data Engineering · Pipeline</div>
+          <div class="project-tag">AI Engineering · Agents</div>
+          <div class="project-name">Tasklet Support Agent</div>
+          <p class="project-desc">
+            Reference implementation of a multi-turn support agent for a fictional B2B SaaS, built on native Claude tool use with no agent frameworks. The model picks from predefined query functions instead of writing SQL, and per-user data scoping is enforced in the service layer with tested defenses against injected IDs. Conversation state persists to SQLite. Ships with a CLI, a Streamlit UI and a React dashboard over FastAPI.
+          </p>
+          <div class="project-stack">
+            <span class="tag">Python</span>
+            <span class="tag">Anthropic API</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">React</span>
+            <span class="tag">pytest</span>
+          </div>
+        </div>
+        <a href="https://github.com/JoyMikhaelLeb/tasklet-project" target="_blank" rel="noopener" class="project-link">
+          GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+
+      <div class="project-card fade-in">
+        <div>
+          <div class="project-tag">Data Engineering · Scraping</div>
+          <div class="project-name">General Data Collector</div>
+          <p class="project-desc">
+            A suite of 23 async web crawlers collecting startup and company data from directories, investment platforms, government registries (Companies House, Infogreffe, SEC EDGAR) and MENA sources (Magnitt, Wamda, ArabNet). Every crawler is containerized with its own tests, rate limiting and JSON/CSV export, and the whole fleet is orchestrated with Docker Compose and Make.
+          </p>
+          <div class="project-stack">
+            <span class="tag">Python</span>
+            <span class="tag">asyncio</span>
+            <span class="tag">aiohttp</span>
+            <span class="tag">Docker</span>
+            <span class="tag">uv</span>
+            <span class="tag">pytest</span>
+          </div>
+        </div>
+        <a href="https://github.com/JoyMikhaelLeb/general-data-collector" target="_blank" rel="noopener" class="project-link">
+          GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+
+      <div class="project-card fade-in">
+        <div>
+          <div class="project-tag">Data Engineering · Professional Work</div>
           <div class="project-name">LinkedIn Large-Scale Scraping System</div>
           <p class="project-desc">
-            Production-grade async scraping infrastructure for LinkedIn using nodriver (anti-bot detection) and Selenium. Includes Sales Navigator scrapers, profile data extractors, company ID resolution, GCS-based HTML storage, and Firestore pipelines. Optimized Firestore read costs by ~96%.
+            Production async scraping infrastructure built at RanDee using nodriver (anti-bot detection) and Selenium. Includes Sales Navigator scrapers, profile data extractors, company ID resolution, GCS-based HTML storage and Firestore pipelines. Optimized Firestore read costs by ~96%. Private codebase.
           </p>
           <div class="project-stack">
             <span class="tag">Python</span>
@@ -750,30 +797,9 @@
             <span class="tag">async/await</span>
             <span class="tag">Firestore</span>
             <span class="tag">GCS</span>
-            <span class="tag">BeautifulSoup</span>
           </div>
         </div>
         <div></div>
-      </div>
-
-      <div class="project-card fade-in">
-        <div>
-          <div class="project-tag">Data Engineering · ETL</div>
-          <div class="project-name">Firestore Migration & Data Pipeline</div>
-          <p class="project-desc">
-            Batched Python migration script to export Firestore collections to local JSON with date-range filtering, MD5-hashed filenames, safe delete-after-confirm logic, and a 30,000 reads/day limit to stay within the free tier. Built for reliability and cost control at scale.
-          </p>
-          <div class="project-stack">
-            <span class="tag">Python</span>
-            <span class="tag">Firestore</span>
-            <span class="tag">ETL</span>
-            <span class="tag">GCP</span>
-          </div>
-        </div>
-        <a href="https://github.com/JoyMikhaelLeb" target="_blank" class="project-link">
-          GitHub
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </a>
       </div>
 
     </div>
